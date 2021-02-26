@@ -32,27 +32,49 @@
     <div class="form">
       <h2 class="form__title">Оформление покупки</h2>
 
-      <label for="form__size">Размер</label>
-      <select name="form__size" class="form__size">
-        <option>37</option>
-        <option>38</option>
-        <option selected="selected">39</option>
-        <option>40</option>
-        <option>41</option>
-        <option>42</option>
-        <option>43</option>
-        <option>44</option>
-      </select>
+      <div>
+        <label for="form__size">Размер</label>
+        <select name="form__size" class="form__size">
+          <option>37</option>
+          <option>38</option>
+          <option selected="selected">39</option>
+          <option>40</option>
+          <option>41</option>
+          <option>42</option>
+          <option>43</option>
+          <option>44</option>
+        </select>
+      </div>
 
-      <fieldset>
+      <fieldset class="form__color-field">
         <legend>Цвет: </legend>
         <label for="form__color-1" class="form__color--red">Красный</label>
-        <input type="radio" name="form__color-1" id="form__color-1" class="form__color">
+        <input type="radio" name="form__color-1" id="form__color-1" class="form__color" checked value="Красный">
         <label for="form__color-2" class="form__color--green">Зеленый</label>
-        <input type="radio" name="form__color-1" id="form__color-2" class="form__color">
+        <input type="radio" name="form__color-1" id="form__color-2" class="form__color" value="Зеленый">
         <label for="form__color-3" class="form__color--blue">Голубой</label>
-        <input type="radio" name="form__color-1" id="form__color-3" class="form__color">
+        <input type="radio" name="form__color-1" id="form__color-3" class="form__color" value="Голубой">
       </fieldset>
+
+      <div>
+        <label for="form__count">Колличество:</label>
+        <input id="form__count" class="form__count" value="1">
+      </div>
+
+      <div>
+        <h3>Данные для доставки:</h3>
+        <form>
+          <input type="name" placeholder="Имя" required id="form__name">
+          <input type="email" placeholder="Email" required id="form__email">
+          <input type="text" placeholder="Адрес доставки" required id="form__adress">
+          <input type="text" id="form__datepicker" placeholder="Дата доставки" required>
+          <input type="submit" value="Оформить" id="submit">
+        </form>
+      </div>
+
+
+
+
     </div>
 
   </div>
