@@ -37,6 +37,9 @@ for (item in products) {
   )
 }
 
+$('.form__color').checkboxradio();
+$('.form__size').selectmenu();
+
 let selectedProcduct = null
 
 $('.product-footer__submit').button().click(function () {

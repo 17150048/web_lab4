@@ -8,8 +8,6 @@
   <title>Lab4</title>
   <link rel="stylesheet" href="jq/jquery-ui.min.css">
   <link rel="stylesheet" href="jq/jquery-ui.structure.min.css">
-  <link rel="stylesheet" href="jq/jquery-ui.theme.min.css">
-  <link rel="stylesheet" href="jq/jquery-confirm.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,13 +29,36 @@
       </div> -->
     </div>
 
+    <div class="form">
+      <h2 class="form__title">Оформление покупки</h2>
+
+      <label for="form__size">Размер</label>
+      <select name="form__size" class="form__size">
+        <option>37</option>
+        <option>38</option>
+        <option selected="selected">39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+      </select>
+
+      <fieldset>
+        <legend>Цвет: </legend>
+        <label for="form__color-1" class="form__color--red">Красный</label>
+        <input type="radio" name="form__color-1" id="form__color-1" class="form__color">
+        <label for="form__color-2" class="form__color--green">Зеленый</label>
+        <input type="radio" name="form__color-1" id="form__color-2" class="form__color">
+        <label for="form__color-3" class="form__color--blue">Голубой</label>
+        <input type="radio" name="form__color-1" id="form__color-3" class="form__color">
+      </fieldset>
+    </div>
 
   </div>
 
   <script src="./jq/jquery.js"></script>
   <script src="./jq/jquery-ui.min.js"></script>
-  <script src="./jq/jquery.jcarousel.min.js"></script>
-  <script src="./jq/jquery-confirm.min.js"></script>
   <script src="./main.js"></script>
 </body>
 

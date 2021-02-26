@@ -33,3 +33,15 @@
   color: tomato;
   font-size: 1.5rem;
 }
+
+.form__color--red {
+  color: rgb(255, 104, 104);
+}
+
+.form__color--green {
+  color: forestgreen;
+}
+
+.form__color--blue {
+  color: rgb(139, 139, 255);
+}
